@@ -37,14 +37,12 @@ img { max-width: 100%; }
 .utility-actions { margin-left: auto; display: flex; align-items: center; gap: 14px; }
 .social-links { display: flex; align-items: center; gap: 8px; }
 .social-link { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid rgba(7,23,42,.16); border-radius: 50%; color: var(--ink); transition: color .18s ease, background .18s ease, border-color .18s ease, transform .18s ease; }
-.social-link:hover { color: white; border-color: transparent; transform: translateY(-2px); }
-.social-link[data-network="facebook"]:hover { background: #1877f2; }
-.social-link[data-network="instagram"]:hover { background: #e4405f; }
-.social-link[data-network="whatsapp"]:hover { background: #25d366; }
+.social-link:hover { background: rgba(7,23,42,.055); border-color: rgba(7,23,42,.28); transform: translateY(-1px); }
 .social-icon { width: 17px; height: 17px; display: block; fill: currentColor; }
 .utility-socials { gap: 5px; }
 .utility-socials .social-link { width: 27px; height: 27px; border-color: rgba(255,255,255,.24); color: #dce6ee; }
 .utility-socials .social-icon { width: 13px; height: 13px; }
+.utility-socials .social-link:hover { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.42); color: white; }
 .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 4px rgba(72, 213, 154, .13); }
 
 .site-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.97); border-bottom: 1px solid rgba(7,23,42,.11); backdrop-filter: blur(14px); }
@@ -265,6 +263,7 @@ img { max-width: 100%; }
 .footer-status .status-dot { margin-right: 8px; }
 .footer-socials { margin-top: 24px; }
 .footer-socials .social-link { border-color: #263b4e; color: #a9bac8; }
+.footer-socials .social-link:hover { background: rgba(255,255,255,.06); border-color: #3b5267; color: white; }
 .footer-grid h2 { margin: 0 0 18px; color: white; font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
 .footer-grid > div:not(.footer-intro) a, .footer-note { display: block; padding: 7px 0; color: #91a5b6; font-size: 13px; }
 .footer-grid a:hover { color: white; }
