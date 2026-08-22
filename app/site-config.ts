@@ -5,6 +5,11 @@ export const siteConfig = {
   phoneDisplay: "",
   whatsapp: "",
   email: "",
+  social: {
+    facebook: "",
+    instagram: "",
+    whatsapp: "",
+  },
   availability: "Servicios urgentes y programados bajo disponibilidad",
 };
 
