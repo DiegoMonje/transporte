@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navItems } from "../site-config";
 import { BrandLogo } from "./brand-logo";
+import { SocialLinks } from "./social-links";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -16,7 +17,10 @@ export function SiteHeader() {
         <div className="container utility-inner">
           <span><span className="status-dot" />Base operativa en Sevilla</span>
           <span className="utility-detail">Transporte directo · Vehículo exclusivo · Sin transbordos</span>
-          <Link href="/contacto">Atención directa <span aria-hidden="true">→</span></Link>
+          <div className="utility-actions">
+            <SocialLinks className="utility-socials" />
+            <Link className="utility-contact" href="/contacto">Atención directa <span aria-hidden="true">→</span></Link>
+          </div>
         </div>
       </div>
       <header className="site-header">
