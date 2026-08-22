@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig } from "../site-config";
 
 type BrandLogoProps = {
   light?: boolean;
@@ -14,19 +13,16 @@ export function BrandLogo({ light = false, priority = false }: BrandLogoProps) {
       href="/"
       aria-label="Transporte Directo Sevilla, ir al inicio"
     >
-      <span className="brand-logo-frame" aria-hidden="true">
+      <span className="brand-wordmark-logo" aria-hidden="true">
         <Image
-          className="brand-logo-image"
-          src="/logo-transporte-directo.svg"
+          className="brand-wordmark-image"
+          src={light ? "/logo-transporte-directo-wordmark-light.svg" : "/logo-transporte-directo-wordmark.svg"}
           alt=""
-          width={64}
-          height={64}
+          width={850}
+          height={100}
           priority={priority}
+          sizes={light ? "280px" : "(max-width: 560px) 210px, 260px"}
         />
-      </span>
-      <span className="brand-copy">
-        <strong>{siteConfig.descriptor}</strong>
-        <small>{siteConfig.location}</small>
       </span>
     </Link>
   );
