@@ -6,9 +6,9 @@ export const siteConfig = {
   whatsapp: "",
   email: "",
   social: {
-    facebook: "",
-    instagram: "",
-    whatsapp: "",
+    facebook: "https://www.facebook.com/",
+    instagram: "https://www.instagram.com/",
+    whatsapp: "https://www.whatsapp.com/",
   },
   availability: "Servicios urgentes y programados bajo disponibilidad",
 };
