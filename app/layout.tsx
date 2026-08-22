@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiteHeader } from "./components/site-header";
 import { SiteFooter } from "./components/site-footer";
 import { SocialIcon } from "./components/social-links";
+import { siteConfig } from "./site-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -45,7 +46,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         {children}
         <SiteFooter />
-        <Link className="whatsapp-float" href="/contacto#datos-pendientes" aria-label="Contactar por WhatsApp" title="WhatsApp pendiente de activar"><span className="whatsapp-float-icon"><SocialIcon network="whatsapp" /></span><em>WhatsApp</em></Link>
+        <Link className="whatsapp-float" href={siteConfig.social.whatsapp} target="_blank" rel="noreferrer" aria-label="Abrir WhatsApp" title="Abrir WhatsApp"><span className="whatsapp-float-icon"><SocialIcon network="whatsapp" /></span><em>WhatsApp</em></Link>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </body>
     </html>
