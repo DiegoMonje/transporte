@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">Transporte Directo Sevilla</title>
-  <desc id="desc">Monograma TD con flecha de avance</desc>
-  <rect width="64" height="64" rx="12" fill="#07172A"/>
-  <path d="M10 18h25v7H26v22h-8V25h-8z" fill="#fff"/>
-  <path fill-rule="evenodd" d="M34 18h8c9.4 0 16 5.9 16 14.5S51.4 47 42 47h-8V18zm8 7h-1v15h1c5.2 0 8-2.8 8-7.5S47.2 25 42 25z" fill="#fff"/>
-  <path d="M9 52h34l-4.5-4.5 4.9-4.9L56 55.2 43.4 67.8l-4.9-4.9 4-3.9H9z" fill="#F26A21" transform="translate(0 -5)"/>
-</svg>
