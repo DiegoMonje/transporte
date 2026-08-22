@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { siteConfig } from "../site-config";
+import { BrandLogo } from "./brand-logo";
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-intro">
-          <Link className="brand brand-light" href="/"><span className="brand-mark"><span>TD</span></span><span className="brand-copy"><strong>{siteConfig.descriptor}</strong><small>{siteConfig.location}</small></span></Link>
+          <BrandLogo light />
           <p>Transporte directo de mercancías para empresas en Sevilla y Andalucía.</p>
           <div className="footer-status"><span className="status-dot" /> {siteConfig.availability}</div>
         </div>

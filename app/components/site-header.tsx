@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { navItems, siteConfig } from "../site-config";
+import { navItems } from "../site-config";
+import { BrandLogo } from "./brand-logo";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -20,10 +21,7 @@ export function SiteHeader() {
       </div>
       <header className="site-header">
         <div className="container header-inner">
-          <Link className="brand" href="/" aria-label="Transporte Directo, inicio">
-            <span className="brand-mark" aria-hidden="true"><span>TD</span></span>
-            <span className="brand-copy"><strong>{siteConfig.descriptor}</strong><small>{siteConfig.location}</small></span>
-          </Link>
+          <BrandLogo priority />
           <button className="menu-toggle" type="button" aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen((value) => !value)}>
             <span className="sr-only">Abrir menú</span><span /><span /><span />
           </button>
